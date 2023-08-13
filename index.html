@@ -10,6 +10,11 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script>
+			function redirectToResume() {
+				window.location.href = "resume.html";
+			}
+		</script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -50,7 +55,7 @@
 						</div>
 					</section>
 					<ul class="links">
-						<input type="button" class="action" value="RESUME" onclick="redirectToPage()">
+						<input type="button" id="resumeButton" class="action" value="RESUME" onclick="redirectToResume()">
 					</ul>
 
 				<!-- Main -->
