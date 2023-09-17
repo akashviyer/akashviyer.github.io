@@ -20,7 +20,20 @@
 		            display: inline-block;
 			    margin-left: -1.5em 
 		        }
-			.profile-image {
+			.container {
+   				display: flex;
+    			}
+    			.text-section {
+        			width: 70%;
+    			}
+    			.image-section {
+       				width: 30%;
+        			text-align: center; /* Centering the image within the section */
+    			}
+    			.profile-image {
+        			width: 90%; /* Adjust as needed to control the image size within the section */
+   			}
+/* 			.profile-image {
 			        width: 9rem;
 			        height: 13rem;
 			        position: absolute;
@@ -29,14 +42,14 @@
 			        margin-top: -8rem;
 			        margin-right: 3rem;
 			        margin-bottom: 1rem;
-			    }
-		    @media (max-width: 768px) {
+			    } */
+/* 		    @media (max-width: 768px) {
 			.profile-image {
 			    position: relative;
 			    top: auto;
 			    right: auto;
 			    margin: 0 auto 1rem; /* Centered with margin below */
-			}
+			} */
 		    }
     		</style>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -65,19 +78,23 @@
 
 				<!-- Banner -->
 					<section id="banner" class="major">
-						<div class="inner">
-							<header class="major">
-								<h1>Hi, my name is Akash!</h1>
-								<img src="images/profile_pic.JPG" alt="Akash's Image" class="profile-image" />
-							</header>
-							<div class="content">
-								<p>I'm a Data Science major at Berkeley looking to use machine learning and data-driven insights to make an impact. Check out some of my work down below!</p>
-							</div>		
-							<div class="button-container">
-								<ul class="links">
-									<input type="button" id="resumeButton" class="action" value="VIEW RESUME" onclick="redirectToResume()">
-								</ul>
-							</div>
+						<div class="inner container">
+							<div class="text-section">
+            							<header class="major">
+                							<h1>Hi, my name is Akash!</h1>
+            							</header>
+            							<div class="content">
+                							<p>I'm a Data Science major at Berkeley looking to use machine learning and data-driven insights to make an impact. Check out some of my work down below!</p>
+            							</div>      
+            							<div class="button-container">
+                							<ul class="links">
+                    								<input type="button" id="resumeButton" class="action" value="VIEW RESUME" onclick="redirectToResume()">
+                							</ul>
+            							</div>
+        						</div>
+        						<div class="image-section">
+            							<img src="images/profile_pic.JPG" alt="Akash's Image" class="profile-image" />
+        						</div>
 						</div>
 					</section>
 
