@@ -2861,6 +2861,7 @@ input, select, textarea {
 				height: 30vh;
 				max-height: 30em;
 				min-height: 20em;
+				width: 50% !important;
 			}
 
 		}
